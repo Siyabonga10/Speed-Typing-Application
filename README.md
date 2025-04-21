@@ -2,7 +2,9 @@
 
 A speed typing application written in Python to help you improve your typing speed and accuracy. The app displays a passage of text, and the user types it out as quickly and accurately as possible. Correctly typed letters are shown in white, while incorrect ones are highlighted in red. At the end of the test, the app calculates and displays the user's Words Per Minute (WPM) and accuracy. The app features a clean and minimalistic user interface.
 
-![Demo Screenshot](./assets/demo/gameplay.png)
+<div align="center">
+  <img src="./assets/demo/home.png" alt="Typing Test" width="50%">
+</div>
 
 ---
 
@@ -54,8 +56,10 @@ The app relies on the following libraries:
 
 Demo
 Here are some screenshots of the application in action:
-<img src="./assets/demo/home.png" alt="Typing Test" width="50%">
-<img src="./assets/demo/gameplay.png" alt="Results Screen" width="50%">
+<div align="center">
+   <img src="./assets/demo/gameplay.png" alt="Typing Test" width="50%">
+   <img src="./assets/demo/score.png" alt="Results Screen" width="50%">
+</div>
 
 Typing Test Results Screen
 

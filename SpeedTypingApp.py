@@ -72,6 +72,10 @@ class SpeedTypingApp:
         self.accuracy = 0
         self.end_of_game_screen = pygame.surface.Surface((0, 0))
 
+        # Handle game sounds
+        self.sound_channel = pygame.mixer.Channel(0)
+        self.key_sound = pygame.mixer.Sound("./assets/sfx/sound.mp3")
+
     def split_passage_to_lines(self) -> None:
         self.choose_passage()
         avg_letters = self.width/(self.font_size*0.9)  # Some padding on the edges
@@ -114,6 +118,8 @@ class SpeedTypingApp:
     def event_handler(self):
         self.t2 = pygame.time.get_ticks()
         for event in self.events:
+            if event.type == pygame.KEYDOWN:
+                self.sound_channel.play(self.key_sound)
             if event.type == pygame.KEYDOWN and event.key == pygame.K_BACKSPACE and self.pointer.col > 0:
                 self.pointer.col -= 1
                 del self.current_line_data[self.pointer.col]

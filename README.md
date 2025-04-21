@@ -54,8 +54,8 @@ The app relies on the following libraries:
 
 Demo
 Here are some screenshots of the application in action:
-![Demo Screenshot](./assets/demo/gameplay.png)
-![Demo Screenshot](./assets/demo/gameplay.png)
+<img src="./assets/demo/home.png" alt="Typing Test" width="50%">
+<img src="./assets/demo/gameplay.png" alt="Results Screen" width="50%">
 
 Typing Test Results Screen
 
